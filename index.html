@@ -1,0 +1,306 @@
+<!-- https://bulma.io/documentation/ -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bulma Blog</title>
+    <!-- STYLE SHEET BULMA NEEDS IN ORDER TO WORK CORRECTLY -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css"
+    />
+    <!-- CSS CLASSES -->
+    <style>
+      .grid {
+        display: grid;
+        grid-template-columns: [xl-start] 1fr [md-start] minmax(0, 624px) [md-end] 1.5rem 1fr [xl-end];
+      }
+
+      .center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .is-paddingless-horizontal {
+        padding-left: 0;
+        padding-right: 0;
+      }
+
+      .grid * {
+        grid-column: md;
+      }
+
+      .grid-xl {
+        grid-column: xl;
+      }
+    </style>
+  </head>
+  <body class="has-background-white">
+    <!-- section -->
+    <section class="section is-paddingless-horizontal">
+      <div class="container grid">
+        <!-- breadcrumb -->
+        <nav class="breadcrumb grid-xl" aria-label="breadcrumbs">
+          <ul>
+            <!-- buttons -->
+            <li><a href="#">Home</a></li>
+            <li class="is-active">
+              <a href="#" class="has-text-dark" aria-current="page"
+                >How to build a beautiful blog</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+
+    <!-- section -->
+    <section class="section is-paddingless-horizontal pt-0">
+      <div class="container grid">
+        <!-- media -->
+        <article class="media center">
+          <figure class="media-left">
+            <figure class="image is-64x64">
+              <!-- pfp -->
+              <img
+                src="imgs/beautiful.avif"
+                alt=""
+                style="border-radius: 100%"
+              />
+            </figure>
+          </figure>
+          <!-- content -->
+          <!-- https://bulma.io/documentation/elements/content/ -->
+          <div class="media-content">
+            <div class="content">
+              <p>
+                <strong class="has-text-dark"> Jordan Taylor </strong>
+                <a>@Official-J_TAYLOR</a>
+                <span class="has-text-grey is-size-7"
+                  >Self-taught, inspired to learn<br />
+                  <time datetime="2024-08-10">Aug 20</time> • 20 min read</span
+                >
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <!-- SECTION -->
+        <div class="section is-paddingless-horizontal">
+          <!-- TITLE / SUBTITLE-->
+          <h1 class="title is-2 has-text-dark">
+            How to build a beautiful blog
+          </h1>
+          <h2 class="subtitle ia-3">Learn from first-principles</h2>
+        </div>
+
+        <!-- columns -->
+        <div class="columns grid-xl is-0">
+          <!-- column -->
+          <div class="column card p-2 m-2">
+            <figure class="image">
+              <a
+                ><img src="imgs/mountains2.avif" style="border-radius: 2%"
+              /></a>
+            </figure>
+          </div>
+
+          <!-- column -->
+          <div class="column card p-2 m-2">
+            <figure class="image">
+              <a><img src="imgs/Sky.avif" style="border-radius: 2%" /></a>
+            </figure>
+          </div>
+
+          <!-- column -->
+          <div class="column card p-2 m-2">
+            <figure class="image">
+              <a><img src="imgs/water.avif" style="border-radius: 2%" /></a>
+            </figure>
+          </div>
+        </div>
+
+        <!-- figcaption / level -->
+        <figcaption class="has-text-centered level">
+          <small class="is-size-6 level-item"
+            >The blog we'll build. Click above to continue</small
+          >
+        </figcaption>
+
+        <!-- content -->
+        <!-- https://bulma.io/documentation/elements/content/ -->
+        <div class="content">
+          <h1 class="has-text-dark">Hello World</h1>
+          <p>
+            Lorem ipsum<sup><a>[1]</a></sup> dolor sit amet, consectetur
+            adipiscing elit. Nulla accumsan, metus ultrices eleifend gravida,
+            nulla nunc varius lectus, nec rutrum justo nibh eu lectus. Ut
+            vulputate semper dui. Fusce erat odio, sollicitudin vel erat vel,
+            interdum mattis neque. Sub<sub>script</sub>
+            works as well!
+          </p>
+          <h2 class="has-text-dark">Second level</h2>
+          <p>
+            Curabitur accumsan turpis pharetra
+            <strong class="has-text-dark">augue tincidunt</strong> blandit.
+            Quisque condimentum maximus mi, sit amet commodo arcu rutrum id.
+            Proin pretium urna vel cursus venenatis. Suspendisse potenti. Etiam
+            mattis sem rhoncus lacus dapibus facilisis. Donec at dignissim dui.
+            Ut et neque nisl.
+          </p>
+          <ul>
+            <li class="has-text-dark">
+              In fermentum leo eu lectus mollis, quis dictum mi aliquet.
+            </li>
+            <li class="has-text-dark">
+              Morbi eu nulla lobortis, lobortis est in, fringilla felis.
+            </li>
+            <li class="has-text-dark">
+              Aliquam nec felis in sapien venenatis viverra fermentum nec
+              lectus.
+            </li>
+            <li class="has-text-dark">Ut non enim metus.</li>
+          </ul>
+          <h3 class="has-text-dark">Third level</h3>
+          <p>
+            Quisque ante lacus, malesuada ac auctor vitae, congue
+            <a href="#">non ante</a>. Phasellus lacus ex, semper ac tortor nec,
+            fringilla condimentum orci. Fusce eu rutrum tellus.
+          </p>
+          <ol>
+            <li class="has-text-dark">Donec blandit a lorem id convallis.</li>
+            <li class="has-text-dark">
+              Cras gravida arcu at diam gravida gravida.
+            </li>
+            <li class="has-text-dark">Integer in volutpat libero.</li>
+            <li class="has-text-dark">Donec a diam tellus.</li>
+            <li class="has-text-dark">Aenean nec tortor orci.</li>
+            <li class="has-text-dark">
+              Quisque aliquam cursus urna, non bibendum massa viverra eget.
+            </li>
+            <li class="has-text-dark">Vivamus maximus ultricies pulvinar.</li>
+          </ol>
+          <blockquote>
+            Ut venenatis, nisl scelerisque sollicitudin fermentum, quam libero
+            hendrerit ipsum, ut blandit est tellus sit amet turpis.
+          </blockquote>
+          <p>
+            Quisque at semper enim, eu hendrerit odio. Etiam auctor nisl et
+            <em>justo sodales</em> elementum. Maecenas ultrices lacus quis neque
+            consectetur, et lobortis nisi molestie.
+          </p>
+          <p>
+            Sed sagittis enim ac tortor maximus rutrum. Nulla facilisi. Donec
+            mattis vulputate risus in luctus. Maecenas vestibulum interdum
+            commodo.
+          </p>
+          <dl>
+            <dt class="has-text-dark">Web</dt>
+            <dd>
+              The part of the Internet that contains websites and web pages
+            </dd>
+            <dt class="has-text-dark">HTML</dt>
+            <dd>A markup language for creating web pages</dd>
+            <dt class="has-text-dark">CSS</dt>
+            <dd>A technology to make HTML look better</dd>
+          </dl>
+          <p>
+            Suspendisse egestas sapien non felis placerat elementum. Morbi
+            tortor nisl, suscipit sed mi sit amet, mollis malesuada nulla. Nulla
+            facilisi. Nullam ac erat ante.
+          </p>
+          <h4 class="has-text-dark">Fourth level</h4>
+          <p>
+            Nulla efficitur eleifend nisi, sit amet bibendum sapien fringilla
+            ac. Mauris euismod metus a tellus laoreet, at elementum ex
+            efficitur.
+          </p>
+          <pre>
+&lt;!DOCTYPE html&gt; &lt;html&gt; &lt;head&gt;
+&lt;title&gt;Hello World&lt;/title&gt; &lt;/head&gt; &lt;body&gt; &lt;p&gt;Lorem
+ipsum dolor sit amet, consectetur adipiscing elit. Donec viverra nec nulla vitae
+mollis.&lt;/p&gt; &lt;/body&gt; &lt;/html&gt; </pre
+          >
+          <p>
+            Maecenas eleifend sollicitudin dui, faucibus sollicitudin augue
+            cursus non. Ut finibus eleifend arcu ut vehicula. Mauris eu est
+            maximus est porta condimentum in eu justo. Nulla id iaculis sapien.
+          </p>
+          <table>
+            <thead>
+              <tr>
+                <th class="has-text-dark">One</th>
+                <th class="has-text-dark">Two</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Three</td>
+                <td>Four</td>
+              </tr>
+              <tr>
+                <td>Five</td>
+                <td>Six</td>
+              </tr>
+              <tr>
+                <td>Seven</td>
+                <td>Eight</td>
+              </tr>
+              <tr>
+                <td>Nine</td>
+                <td>Ten</td>
+              </tr>
+              <tr>
+                <td>Eleven</td>
+                <td>Twelve</td>
+              </tr>
+            </tbody>
+          </table>
+          <p>
+            Phasellus porttitor enim id metus volutpat ultricies. Ut nisi nunc,
+            blandit sed dapibus at, vestibulum in felis. Etiam iaculis lorem ac
+            nibh bibendum rhoncus. Nam interdum efficitur ligula sit amet
+            ullamcorper. Etiam tristique, leo vitae porta faucibus, mi lacus
+            laoreet metus, at cursus leo est vel tellus. Sed ac posuere est.
+            Nunc ultricies nunc neque, vitae ultricies ex sodales quis. Aliquam
+            eu nibh in libero accumsan pulvinar. Nullam nec nisl placerat,
+            pretium metus vel, euismod ipsum. Proin tempor cursus nisl vel
+            condimentum. Nam pharetra varius metus non pellentesque.
+          </p>
+          <h5 class="has-text-dark">Fifth level</h5>
+          <p>
+            Aliquam sagittis rhoncus vulputate. Cras non luctus sem, sed
+            tincidunt ligula. Vestibulum at nunc elit. Praesent aliquet ligula
+            mi, in luctus elit volutpat porta. Phasellus molestie diam vel nisi
+            sodales, a eleifend augue laoreet. Sed nec eleifend justo. Nam et
+            sollicitudin odio.
+          </p>
+          <figure>
+            <img
+              src="https://bulma.io/assets/images/placeholders/256x256.png"
+            />
+            <img
+              src="https://bulma.io/assets/images/placeholders/256x256.png"
+            />
+            <figcaption class="has-text-dark">
+              Figure 1: Some beautiful placeholders
+            </figcaption>
+          </figure>
+          <h6 class="has-text-dark">Sixth level</h6>
+          <p>
+            Cras in nibh lacinia, venenatis nisi et, auctor urna. Donec pulvinar
+            lacus sed diam dignissim, ut eleifend eros accumsan. Phasellus non
+            tortor eros. Ut sed rutrum lacus. Etiam purus nunc, scelerisque quis
+            enim vitae, malesuada ultrices turpis. Nunc vitae maximus purus, nec
+            consectetur dui. Suspendisse euismod, elit vel rutrum commodo, ipsum
+            tortor maximus dui, sed varius sapien odio vitae est. Etiam at
+            cursus metus.
+          </p>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
