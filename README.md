@@ -17,4 +17,5 @@ Live: https://bulma-blog.onrender.com
 # Related Projects
 -  [Bulma Basics](https://github.com/TylrPopcorn/Bulma-Basics) - *Learn the basics of Bulma*
 -  [What Even is Bulma?](https://github.com/TylrPopcorn/What-Even-Is-Bulma) - *Learn about what Bulma is*
+-  [Museum of Candy](https://github.com/TylrPopcorn/Museum-of-Candy) - *A simple practice project utilizing BootStrap*
 -  [Projects List](https://github.com/TylrPopcorn/Projects-List) - *Explore other projects I have worked on*
